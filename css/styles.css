@@ -160,13 +160,41 @@ padding-bottom:15px ;
 }
 
 
+.link-heder-a {
+display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+
+.link-icon-heder {
+  width: 16px;
+  height: 12px;
+  fill: rebeccapurple;
+outline:1px solid red
+}
+
+
+
+
 /* Cекция герой */
 
 .hero {
   
    padding-bottom:200px;
    padding-top: 200px;
-  background-color:var(--hero-footer);
+   padding-left:1;
+padding-right: 1;
+  /* background-color:var(--hero-footer); */
+  background-image:linear-gradient(var(--hero-footer),rgba(47, 48, 58, 0.4)),url('../images/фон героя.jpg') ; 
+  background-size: contain;
+ 
+background-attachment: scroll;
+   background-position:center;
+  background-repeat: no-repeat;
+
+
 }
 
 
@@ -326,7 +354,30 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-bottom: 10px;
 }
 
+.container-os-antenna {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /* display: block; */
+  border-radius: 4px;
+  background-color:var(--nk-color);
+  background-position: center;
+  /* background-size: auto; */
+   width: 270px;
+  width: 100%; 
+  height: 120px;
+  padding: 0;
+  display: flex; 
+  align-items: center;
+  justify-content:center;
+  margin-bottom: 30px;
 
+}
+
+.icon-antenna {
+width: 66px;
+height: 70px;
+outline: crimson;
+}
 
 
 
