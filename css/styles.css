@@ -79,6 +79,9 @@ p {
   align-items: center;
 }
 
+.cm-header-first {
+  margin-right: 30px;
+}
 
 .item-p {
   display:flex;
@@ -87,10 +90,13 @@ p {
 .conteiner-u {
   display:flex;
  align-items: center;
- margin-left: 331px;
- /* justify-items: space-between;
+ margin-left: 305px;
  
- justify-content: space-between; */
+}
+
+.link-icon-heder {
+  margin-right: 10px;
+ 
 }
 
 
@@ -111,18 +117,43 @@ p {
   padding-left: 0px;
 }
 
+/* -----ИКОНКИ----- */
 .item-a {
+  margin-left: 0px;
+  margin-right: 30px;
+}
+
+.item-a::before {
+  display: inline;
+  content: "";
+  width: 16px;
+  height: 12px; 
+ fill:#afb1b8;
+}
+
+.item-b {
   margin-left: 0px;
   margin-right: 0px;
 }
 
-.item-b {
-  margin-left: 50px;
-  margin-right: 0px;
+ .icon-b-header::before {
+  display: inline;
+  content: "";
+  width: 10px;
+  height: 16px; 
+
+ }
+
+.link-icon-heder{
+  fill:#afb1b8
 }
 
-
-
+ .link-icon-heder:hover,
+.link-icon-heder:focus {
+  fill:var(--blue-color);
+  cursor: pointer;
+  
+}
 
 
 .link {
@@ -135,7 +166,7 @@ p {
   letter-spacing: 0.02em;
 }
 .kontakt {
-  color:var(--brand-letter);
+   color:var(--brand-letter);
 }
 
 
@@ -161,18 +192,11 @@ padding-bottom:15px ;
 
 
 .link-heder-a {
-display: inline-block;
+
   padding: 0;
   margin: 0;
   list-style: none;
-
-}
-
-.link-icon-heder {
-  width: 16px;
-  height: 12px;
-  fill: rebeccapurple;
-outline:1px solid red
+  display:block
 }
 
 
@@ -527,6 +551,7 @@ justify-content:  center;
 
 
 .nk-item-link-icon {
+ 
   width: 44px;
   height: 44px;
   
@@ -539,7 +564,7 @@ margin-left: 0px;
 
 
  .nk-item-link-icon {
-  /* min-height: 100vh; */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -642,8 +667,14 @@ justify-content: center ;
 
 .section-title-post {
   text-align: center;
-  
-  margin-bottom: 50px;
+    margin-bottom: 50px;
+ font-weight: 700; 
+  line-height: 1.16;
+font-style: normal;
+ font-size: 36px;
+letter-spacing: 0.03em;
+color: #212121;
+
 
 }
 
@@ -695,25 +726,111 @@ justify-content: center ;
 
 /* СЕКЦИЯ ПОДВАЛ */
 
+/* ------ИКОНКИ ФУТЕРА-------- */
 
-.footer {
-  
-  background-color: var(--hero-footer);
-  padding-bottom:60px;
-  padding-top: 60px;
+.container-footer-generete{ 
+  display: flex;
+flex-direction: row ;
+justify-content: flex-start;
+align-items:center;
+   padding-left: 15px;
+  padding-right: 15px;
+   width: 1200px;
+   margin-right: auto;
+  margin-left: auto;
+ 
 }
 
 
 .container-fu {
-  padding-left: 15px;
-  padding-right: 15px;
-    width: 1200px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-
-
+  width: 231px;
+  /* height: 81px;; */
 }
+
+
+.container-fu-two {  
+  margin-left: 70px;
+  display:flex;
+  width: 206px;
+  /* height: 80px; */
+  flex-direction:column;
+  justify-content: flex-start;
+  /* align-items: center; */
+   fill:var(--header-color);
+   justify-content:  center;
+}
+ 
+
+ 
+.card-fu-two{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+   border: none;
+   border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+ }
+
+ .card-fu-two-first {
+margin-left: 0px;
+ }
+
+
+.card-fu-two:hover,
+.card-fu-two:focus {
+  fill:var(--header-color);
+  background-color:var(--blue-color);
+  
+  border: 1px solid var(--blue-color);
+  border-radius: 50%;
+}
+
+ 
+.ul-card-fu-two {
+  display: flex;
+  list-style: none;
+   
+  margin: 0;
+  padding: 0;
+}
+ 
+
+
+.title-fu-two {
+  display: block;
+  font-weight:700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:var(--header-color); 
+}
+
+
+
+ /* .title-fu-two {
+  display:flex;
+  font-weight:700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:var(--brand-letter);  
+   */
+
+
+.footer {
+  
+  background-color: var(--hero-footer);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
 
 .ul-footer {
   padding-left: 0px;
@@ -733,11 +850,6 @@ justify-content: center ;
   margin-bottom: 9px;
 }
 
-
-
-
-
-
 .footer-link-contact {
   font-weight: 400;
   font-size: 14px;
@@ -745,10 +857,9 @@ justify-content: center ;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
-
   
 .footer-adress {
+  display: block;
   margin-bottom: 9px;
     font-style: normal;
   font-weight: 400;
@@ -757,7 +868,6 @@ justify-content: center ;
   letter-spacing: 0.03em;
   color:var(--header-color);
 }
-
 
 .link-web {
   font-family:var(--link-font);
@@ -774,10 +884,6 @@ justify-content: center ;
 .white span{
   color:#F5F4FA;
 }
-
-
-
-
 
 
 /* СЕКЦИЯ ПОРТФОЛИО ГЕРОЙ */
@@ -878,14 +984,20 @@ color:var(--header-color);
   padding-right: 15px;
    width: 1200px;
   display: block;
-
   padding-bottom:0px;
   padding-top: 50px;
   margin-right: auto;
   margin-left: auto;
 
 }
+.contain-card-link-a {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 
+}
 
 .project {
   display: flex; 
@@ -905,8 +1017,6 @@ color:var(--header-color);
 
 
 
-
-
 .foto-item-cart {
   display: block;
   max-width: 100%;
@@ -918,10 +1028,7 @@ height: auto;
 
 
 .container-project-li {
-
-/* 
-  display: flex; 
-  flex-direction: column; */
+  display: block;
  background-color: var(--header-color);
   padding-top: 20px;
   padding-bottom: 20px;
@@ -954,40 +1061,25 @@ margin-bottom: 4px;
 }
 
 .project-li a {
-  display: flex ;
+  /* display: flex ; */
   margin: 0px;
   padding: 0px;
 }
 
-/* .project-li h3 {
-margin-left: auto;
-  margin-right: auto;
- 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color:var(--h-color);
-} */
+.contain-card-link-a:hover,
+.contain-card-link-a:focus {
+ outline: none;
+cursor: pointer;
+color:var(--header-color);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}.
 
-/* .project-li p {
-margin-left: auto;
-  margin-right: auto;
- 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color:var(--brand-letter);
 
-} */
-
- 
-.pege-title {
+.page-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  align:center;
+  /* align:center; */
   letter-spacing: 0.06em;
   color:var(--header-color);
 }  
