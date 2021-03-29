@@ -187,8 +187,10 @@ outline:1px solid red
    padding-left:1;
 padding-right: 1;
   /* background-color:var(--hero-footer); */
-  background-image:linear-gradient(var(--hero-footer),rgba(47, 48, 58, 0.4)),url('../images/фон героя.jpg') ; 
-  background-size: contain;
+ min-width: 1600px;
+   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/фон героя.jpg');
+  /* background-image:linear-gradient(var(--hero-footer),rgba(47, 48, 58, 0.4)),url('../images/фон героя.jpg') ;  */
+  background-size: cover;
  
 background-attachment: scroll;
    background-position:center;
@@ -491,16 +493,73 @@ height: auto;
 
 .container-nk-content {
     display: flex;
+ /* padding-left: auto;
+ padding-right: auto; */
     flex-direction: column;
+    justify-content: center;
    padding-top: 30px;
  padding-bottom: 30px;
- padding-left: 50px;
- padding-right: 50px;
+ /* padding-left: 50px;
+ padding-right: 50px; */
  width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
- /* text-align: center; */
+ /* text-align: center;  */
+ 
  }
+
+
+
+
+
+.container-nk-icon {
+justify-content:  center;
+  margin: 0px;
+  display: flex;
+   width: 206px;
+   width: 100%;
+    
+
+   /* margin-left: auto;
+   margin-left: auto; */
+}
+
+
+
+.nk-item-link-icon {
+  width: 44px;
+  height: 44px;
+  
+    margin-left: 10px;
+ }
+
+ .nk-item-link-icon-first {
+margin-left: 0px;
+ }
+
+
+ .nk-item-link-icon {
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   fill:#afb1b8;
+ }
+
+
+
+.nk-item-link-icon:hover,
+.nk-item-link-icon:focus {
+  fill:var(--header-color);
+  background-color:var(--blue-color);
+  
+  border: 1px solid var(--blue-color);
+  border-radius: 50%;
+}
+
+
+
+
 
 
 .comanda-h, .comanda-p  {
@@ -548,11 +607,90 @@ border-radius: 0px 0px 4px 4px;
    line-height: 1.19;
    letter-spacing: 0.03em;
    color:var(--brand-letter);
+   margin-bottom: 16px;
  }
 
 
 
 
+
+
+/* ----ПОСТОЯННЫЕ КЛИЕНТЫ-----*/
+
+
+.section-post {
+  background-color:var( --header-color) ;
+ 
+   padding-top: 94px;
+  padding-bottom:94px;
+}
+
+
+.container-post {
+  flex-direction: column;
+justify-content: center ;
+ 
+  padding-left: 15px;
+  padding-right: 15px;
+  display:block;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.section-title-post {
+  text-align: center;
+  
+  margin-bottom: 50px;
+
+}
+
+
+.ul-post {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+
+.clients-item-link{
+  
+   
+  background-color:#FFFFFF;
+  background-position: center;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill:#afb1b8;
+
+  margin-left: 30px;
+
+}
+.link-item-first{
+ margin-left:  0px;
+}
+
+.post-icon {
+ background-color:var( --header-color) ;
+}
+
+
+.clients-item-link:hover,
+.clients-item-link:focus {
+  /* color:var(--blue-color); */
+  fill:var(--blue-color);
+  border: 1px solid var(--blue-color);
+}
+
+ 
 
 
 /* СЕКЦИЯ ПОДВАЛ */
